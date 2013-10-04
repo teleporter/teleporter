@@ -1,0 +1,22 @@
+doctype xml
+rss(version='2.0', xmlns:atom='http://www.w3.org/2005/Atom')
+  channel
+    title Teleporter
+    link http://teleporter.io
+    atom:link(href='http://teleporter.io/articles/feed', rel='self', type='application/rss+xml')
+    description Thoughts from the Teleporter team.
+    language en-US
+    //- - if public.articles.data.length
+    //- lastBuildDate= new Date(new Date()).toUTCString()
+    for article, slug in public.articles.data
+      item
+        title= article.title
+        link http://teleporter.io/articles/#{slug}
+        description
+          | <![CDATA[
+          p= article.teaser
+          p
+            a(href="http://teleporter.io/articles/#{slug}") Read more &raquo;
+          | ]]>
+        pubDate= new Date(article.date).toUTCString()
+        guid(isPermaLink='false') http://teleporter.io/articles/#{slug}

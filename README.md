@@ -15,3 +15,11 @@ Our website is run over [Harp](https://github.com/sintaxi/harp), which is a simp
 ## Development
 
 Save changes to the templates and stylesheets and the Harp server will reload changes.
+
+## Writing a post
+
+Writing a post is a two part operation. First, create a new Markdown file in the `articles` directory (e.g. `kittens-wearing-hats.md`) and put in your content.
+
+Then, modify the `articles/_data.json` file by adding in your article's title and publication date.
+
+That's it! The application will automatically display your article in the articles `index.jade` template.

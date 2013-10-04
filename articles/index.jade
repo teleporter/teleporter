@@ -1,0 +1,9 @@
+h1 Thoughts from Teleporter
+p Learn what we have to say.
+
+h1 Articles
+for article, slug in public.articles.data
+  article.article-teaser
+    h3
+      a(href='/articles/#{slug}')= article.title
+    date= article.date
