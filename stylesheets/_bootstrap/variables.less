@@ -9,16 +9,16 @@
 // Grays
 // -------------------------
 
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 60%);   // #999
-@gray-lighter:           lighten(#000, 93.5%); // #eee
+@gray-darker:            #262c33;
+@gray-dark:              lighten(@gray-darker, 10%);
+@gray:                   lighten(@gray-darker, 30%);
+@gray-light:             lighten(@gray-darker, 45%);
+@gray-lighter:           lighten(@gray-darker, 60%);
 
 // Brand colors
 // -------------------------
 
-@brand-primary:         #428bca;
+@brand-primary:         #0c73c9;
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
@@ -39,12 +39,12 @@
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-sans-serif:  'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       'museo', Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          15px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 

@@ -1,31 +1,45 @@
 section.splash-block
+  != partial('_partials/_navigation')
   .container
-    h1 Teleporter builds software for the web.
-    p.lead Teleporter is a team of lovable software developers in Sonoma County, California that specialize in building awesome web applications.
-    p We're here to help your new business develop an initial prototype, expand your team's capabilities and build out new features and functionality in your product.
-    p
-      a.btn.btn-primary.btn-lg(href="#talk") Let's talk
-      |  
-      a.btn.btn-default.btn-lg(href="#") Learn more
+    .row
+      .col-md-9.col-lg-7
+        h1 Teleporter builds software for the web.
+        p.lead Teleporter is a team of lovable software developers in Sonoma County, California that specialize in building awesome web applications.
+        //- p
+        //-   | We're here to help your new business develop an 
+        //-   strong initial prototype
+        //-   | , expand your team's capabilities and build out 
+        //-   strong new features 
+        //-   | and functionality in your product.
+        p.actions
+          a.btn.btn-primary.btn-lg(href="#talk") Let's talk
+          |  
+          a.btn.btn-default.btn-lg(href="#") Learn more
 
 section.services-block
   .container
     .row
-      .col-sm-4
-        h3
+      .service-box.col-sm-4
+        .service-icon
           i.icon-cogs
         h3 Create a Prototype
-        p Bring your product idea to market with our team's help. We work step-by-step with you and your team to flush out core business logic, establish a game plan and execute.
-      .col-sm-4
-        h3
+        p
+          strong Bring your product idea to market with our team's help. 
+          | We work step-by-step with you and your team to flush out core business logic, establish a game plan and execute.
+      .service-box.col-sm-4
+        .service-icon
           i.icon-group
         h3 Expand Your Team
-        p Have a to-do list a mile long and not enough hands to help? We jump in where needed and expand your team's capacity without you needing to find and hire new talent.
-      .col-sm-4
-        h3
+        p
+          strong Have a to-do list a mile long and not enough hands to help? 
+          | We jump in where needed and expand your team's capacity without you needing to find and hire new talent.
+      .service-box.col-sm-4
+        .service-icon
           i.icon-road
         h3 Stay Competitive
-        p The world moves fast and it takes all the help you can get to adapt. We build systems, processes and solutions to build upon that way you're not left in the dark when the going gets tough.
+        p 
+          strong The world moves fast and it takes all the help you can get to adapt. 
+          | We build systems, processes and solutions to build upon that way you're not left in the dark when the going gets tough.
 section.about-block
   .container
     h3 Why Teleporter?
@@ -44,17 +58,29 @@ section.clients-block
     .row
       .col-sm-4
         h3 Google
+        img.img-responsive(src="http://placehold.it/300x150")
+        p Lorem ipsum In voluptate tempor amet Duis aliquip ad Ut anim est sint sit culpa proident consequat consequat.
       .col-sm-4
         h3 Comcast
+        img.img-responsive(src="http://placehold.it/300x150")
+        p Lorem ipsum Fugiat pariatur sint exercitation fugiat dolor laboris dolor reprehenderit mollit est occaecat aliquip sunt dolore deserunt id proident.
       .col-sm-4
         h3 Remote Sensing Systems
+        img.img-responsive(src="http://placehold.it/300x150")
+        p Lorem ipsum Commodo ullamco consequat id ut ut in fugiat officia commodo officia in nisi ad est officia irure.
     .row
       .col-sm-4
         h3 Americano
+        img.img-responsive(src="http://placehold.it/300x150")
+        p Lorem ipsum Id aliqua voluptate ullamco id ullamco in amet pariatur consectetur dolore dolor dolore laborum incididunt anim.
       .col-sm-4
         h3 Project Paso
+        img.img-responsive(src="http://placehold.it/300x150")
+        p Lorem ipsum In magna incididunt cillum labore ut in magna ut magna Excepteur ullamco culpa laboris ut.
       .col-sm-4
         h3 You
+        img.img-responsive(src="http://placehold.it/300x150")
+        p Lorem ipsum Commodo in veniam voluptate irure exercitation quis qui et adipisicing nulla Excepteur eu ut ullamco culpa et.
 section.tools-block
   .container
     .row
