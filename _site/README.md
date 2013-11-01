@@ -10,13 +10,17 @@ Our website is run over [Harp](https://github.com/sintaxi/harp), which is a simp
 
 1. Checkout the repository: `git clone https://github.com/teleporter/teleporter.io.git`
 2. Install Harp: `sudo npm install -g harp`
-3. Run the harp server `harp server .`
+3. Run the harp server `harp server _site`
 
 ## Development
 
-Save changes to the templates and stylesheets and the Harp server will reload changes.
+**Note:** *All development must be done in the `_site` folder.*
 
-When ready to deploy, run `harp compile _site ./` and commit changes. Github pages will automatically compile the site.
+Running `harp server _site` will automatically compile assets on the fly.
+
+When ready to deploy, run `harp compile _site ./` which will compile all the jade/sass/coffeescript/etc.. files into HTML/CSS/JS. 
+
+Once compilation is finished, commit changes and push to Github. Github pages will automatically compile the site.
 
 ## Writing a post
 
