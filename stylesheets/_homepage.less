@@ -1,11 +1,19 @@
 .splash-block,
 .services-block,
 .about-block,
-.clients-block {
+.clients-block,
+.contact-block {
   padding-bottom: 5em;
   padding-top: 5em;
 }
 
+.block-header {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+// Splash message
+//===================================================
 .splash-block {
   background: #000 url('/images/bokeh.jpg') no-repeat bottom fixed;
   background-size: cover;
@@ -14,7 +22,7 @@
 
   #page-nav {
     background: none;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
   }
 
   h1 {
@@ -69,32 +77,77 @@
   }
 }
 
+
+// Generic Johnson Boxes
+//===================================================
+.johnson-box {
+  text-align: center;
+
+  p {
+    line-height: 1.7;
+    padding: 0 0.5em;
+    text-align: justify;
+  }
+
+  h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+}
+
+
 // Services
 //===================================================
 .services-block {
-  .service-box {
-    text-align: center;
+  background: #f0f5ff;
 
+  .johnson-box {
     .service-icon {
       color: @gray-dark;
       font-size: 7em;
     }
 
-    h3 {
-      font-size: 1.6em;
-      font-weight: 400;
-      margin-bottom: 1em;
-    }
-
     p {
       color: @gray;
-      line-height: 1.7;
-      padding: 0 0.5em;
-      text-align: justify;
 
       strong {
         color: @gray-dark;
       }
     }
+  }
+}
+
+
+// About Us
+//===================================================
+.about-block {
+  background: darken(@teleporter-blue, 25%);
+  color: lighten(desaturate(@teleporter-blue, 80%), 35%);
+
+  .block-header {
+    color: @teleporter-blue;
+  }
+
+  .johnson-box {
+    h3 {
+      color: lighten(desaturate(@teleporter-blue, 80%), 45%);
+    }
+
+    strong {
+      color: lighten(desaturate(@teleporter-blue, 30%), 45%);
+    }  
+  }
+}
+
+
+// Social network icons
+//===================================================
+.network-icons {
+  li {
+    margin-right: 1em;
+  }
+  a {
+    color: desaturate(@teleporter-blue, 80%);
   }
 }
