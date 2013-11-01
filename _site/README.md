@@ -16,6 +16,8 @@ Our website is run over [Harp](https://github.com/sintaxi/harp), which is a simp
 
 Save changes to the templates and stylesheets and the Harp server will reload changes.
 
+When ready to deploy, run `harp compile _site ./` and commit changes. Github pages will automatically compile the site.
+
 ## Writing a post
 
 Writing a post is a two part operation. First, create a new Markdown file in the `articles` directory (e.g. `kittens-wearing-hats.md`) and put in your content.
